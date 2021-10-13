@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/navbar.css";
 import profileImg from "../Assets/user-profile.jpg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar()
 {
@@ -16,15 +16,9 @@ function Navbar()
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <div className="navbar-nav">
-                <button onClick={()=>{
-                  window.location.href="/";
-                }} className="nav-link">Browse Events</button>
-                <button onClick={()=>{
-                  window.location.href="/likedEvents";
-                }} className="nav-link">Liked Events</button>
-                <button onClick={()=>{
-                  window.location.href="/hostEvent";
-                }} className="nav-link">Host an Event</button>
+                <Link to="./"><button className="nav-link">Browse Events</button></Link>
+                <Link to="./likedEvents"><button className="nav-link">Liked Events</button></Link>
+                <Link to="./hostEvent"><button className="nav-link">Host an Event</button></Link>
               </div>
               <div className="profile">
                 <img src={profileImg} alt="profile-img"/>
