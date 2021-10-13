@@ -1,5 +1,5 @@
-<div align="center">
-# EVENTHUB
+<div align="center" font-weight:700 font-size:2rem>
+EVENTHUB
 </div>  
 
 ## List of upcoming events
