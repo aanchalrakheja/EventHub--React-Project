@@ -6,10 +6,13 @@ import db from "../firebase";
 
 function HostEvent()
 {
+    // finding the current date to limit user from entering event date past current date
     const d=new Date();
     const currentYear=d.getFullYear();
     const currentMonth=d.getMonth()+1;
     const currentDate=d.getDate();
+
+    // states to handle form submission and updating events
     const [name,setName]=React.useState("");
     const [date,setDate]=React.useState("");
     const [time,setTime]=React.useState("");
@@ -40,6 +43,8 @@ function HostEvent()
         setImg(e.target.value);
         console.log(e.target.value);
     }
+
+    // function to handle form submission which adds a new event to the database
     async function handleSubmit(e)
     {
         e.preventDefault();
@@ -63,6 +68,7 @@ function HostEvent()
           setTime("");
           window.location.href="./";
     }
+
     return(
         <div className="event-form">
             <form onSubmit={handleSubmit}>
@@ -81,7 +87,6 @@ function HostEvent()
                 <label htmlFor="event-image">Event Image</label>
                 <input id="event-image" type="file" accept="image/*" onChange={handleImgChange}></input>
 
-                
                 <input type="submit" value="ADD EVENT" id="addEvent"></input>
             </form>
         </div>

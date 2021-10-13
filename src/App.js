@@ -1,10 +1,13 @@
 import React from "react";
 import {BrowserRouter as Router,Switch, Route} from "react-router-dom";
+// IMPORTING COMPONENTS
 import EventCard from "./Components/EventCard";
 import HostEvent from "./Components/HostEvent";
 import Navbar from "./Components/Navbar";
 import LikedEvents from "./Components/LikedEvents";
+// IMPORTING CSS
 import "../src/css/App.css";
+// IMPORTING DATABASE REQUIREMENTS
 import db from "./firebase";
 import { collection, getDocs } from "firebase/firestore"; 
 
@@ -25,6 +28,7 @@ function App() {
     }
     getData();
 
+    // cleanup function which runs when the component in unmounted
     return ()=>{
       getData();
     };
@@ -38,15 +42,18 @@ function App() {
           <Route exact path="/">
             <div className="event-container">
                 <h3 className="heading">Upcoming Events</h3>
+                {/* mapping all the events to the event cards */}
                 {events.map((val)=>{
                   return <EventCard val={val.data} key={val.id} id={val.id}/>
                 })}
             </div>
           </Route>
           
+{/* shows likedevents component only when the route is /likedEvents */}
           <Route path="/likedEvents">
             <div className="liked-events">
               <h3 className="heading">Liked Events</h3>
+              {/* filtering the events which are liked */}
               {events.filter((val)=>{
                 return val.data.isLiked===true;
               }).map((item)=>{
@@ -55,6 +62,7 @@ function App() {
             </div>
           </Route>
 
+{/* shows host an event form only when the route is /hostEvent */}
           <Route path="/hostEvent">    
             <div className="host-event">
               <h3 className="heading">Host an Event</h3>
