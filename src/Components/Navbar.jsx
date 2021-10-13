@@ -20,10 +20,10 @@ function Navbar()
                   window.location.href="/";
                 }} className="nav-link">Browse Events</button>
                 <button onClick={()=>{
-                  window.location.href="./likedEvents";
+                  window.location.href="/likedEvents";
                 }} className="nav-link">Liked Events</button>
                 <button onClick={()=>{
-                  window.location.href="./hostEvent";
+                  window.location.href="/hostEvent";
                 }} className="nav-link">Host an Event</button>
               </div>
               <div className="profile">
