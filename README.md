@@ -1,4 +1,6 @@
+<div align="center">
 # EVENTHUB
+</div>  
 
 ## List of upcoming events
 ![image](https://user-images.githubusercontent.com/68388581/137180668-823cbe01-6ff1-412f-89d9-855822ee6bb4.png)
