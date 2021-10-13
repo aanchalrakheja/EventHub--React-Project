@@ -1,0 +1,37 @@
+.event-form{
+    box-shadow:1px 1px 2px 1px grey;
+    width:50%;
+    margin:auto;
+    padding:1rem;
+    margin-top:1.5rem;
+}
+.event-form form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form label{
+    font-size:1.1rem;
+    font-weight:500;
+    margin-bottom: 0.3rem;
+}
+form input{
+    margin-bottom:1rem;
+    padding:0.3rem;
+}
+#addEvent{
+    background-color:green;
+    color:white;
+    border:none;
+    width:150px;
+    margin:auto;
+    margin-top:0.7rem;
+}
+
+@media screen and (max-width:600px)
+{
+    .event-form{
+        width:100%;
+    }
+}

@@ -1,0 +1,113 @@
+.eventcard{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:55%;
+    padding:0.5rem;
+    min-height: fit-content;
+    height: fit-content;
+    box-shadow:1px 1px 2px 1px rgba(211, 211, 211,0.5);
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.event-image{
+    width:230px;
+    margin-right:0.7rem;
+    padding: 0.1rem;
+    text-align:center;
+}
+.event-image img{
+    max-width:100%;
+    height:190px;
+}
+.event-details{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0rem 1rem;
+}
+.event-name{
+    font-size:1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+.event-date,.event-time,.event-location{
+    display:flex;
+    align-items: center;
+    font-size:1rem;
+    margin-bottom: 0.4rem;
+}
+.event-date i,.event-time i,.event-location i{
+    font-size:1.1rem;
+    margin-right:0.8rem;
+    color:rgba(0,0,0,0.7);
+}
+.event-like{
+    padding:0.3rem 0rem;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size:1.3rem;
+    position: relative;
+    bottom:-1rem;
+}
+.liked{
+    color:red;
+}
+@media screen and (min-width:500px) and (max-width:650px){
+    .eventcard{
+        flex-direction: column;
+        align-items: center;
+        width:70%;
+        box-shadow:1px 1px 2px 1px lightgray;
+    }
+    .event-image{
+        width:90%;
+        margin:0px;
+        padding:0px;
+        text-align:center;
+        margin-bottom: 1rem;
+    }
+    .event-image img{
+        width:100%;
+    }
+    .event-details{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px)
+{
+    .eventcard{
+        flex-direction: column;
+        align-items: center;
+        width:95%;
+        box-shadow:1px 1px 2px 1px lightgray;
+    }
+    .event-image{
+        width:100%;
+        margin:0px;
+        padding:0px;
+        text-align:center;
+        margin-bottom: 1rem;
+    }
+    .event-image img{
+        width:100%;
+    }
+    .event-name{
+        font-size:1.2rem;
+        margin-bottom: 0.7rem;
+    }
+    .event-date,.event-time,.event-location{
+        font-size:0.9rem;
+        margin-bottom: 0.6rem;
+    }
+    .event-details{
+        width:100%;
+    }
+    .event-like{
+        bottom: 0px;
+    }
+}
