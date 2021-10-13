@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# EVENTHUB
+
+## List of upcoming events
+![image](https://user-images.githubusercontent.com/68388581/137180668-823cbe01-6ff1-412f-89d9-855822ee6bb4.png)
+
+## Liked Events
+![image](https://user-images.githubusercontent.com/68388581/137180781-9c45d892-a544-41b2-ba54-c1f28316a5d8.png)
+
+## Form to host and add an event
+![image](https://user-images.githubusercontent.com/68388581/137180833-f15ac8f9-6156-4429-9268-548b468e025b.png)
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +80,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
