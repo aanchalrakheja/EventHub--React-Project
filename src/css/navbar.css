@@ -5,6 +5,16 @@
 .navbar-nav{
     margin-right:1rem;
 }
+button{
+    background-color: transparent;
+    border:none;
+    outline:none;
+    color:white;
+    margin:0rem 1rem;
+}
+button:hover{
+    color:lightslategray;
+}
 .profile img{
     width:30px;
     height:30px;
@@ -14,12 +24,12 @@
 .profile{
     color:white;
 }
-a{
-    text-decoration: none;
-}
 
 @media screen and (max-width:600px)
 {
+    .navbar-nav button{
+        margin:0.8rem 0.5rem;
+    }
     .profile{
         border-top:1px solid whitesmoke;
         padding:0.5rem 0rem 0rem 0rem;
